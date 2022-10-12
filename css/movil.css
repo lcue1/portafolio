@@ -168,7 +168,8 @@ main {
 .contacto--comentario{ 
     grid-column: 1/3;
     grid-row: 4;
-    height: 50px;
+    height: 200px;
+    
 }
 .contacto--btnEnviar{ 
     grid-column: 1/3;
