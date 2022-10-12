@@ -1,0 +1,105 @@
+@media only screen and (min-width: 900px) {
+    .cabecera {
+
+        justify-content: space-between;
+        padding: 5%;
+        
+
+    }
+
+
+.introduccion--articuloTitulo {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    margin: auto;
+
+
+}
+
+.introduccion--articuloParrafo {
+    grid-column: 1/4;
+    grid-row: 2;
+
+}
+
+.introduccion--redes {
+    grid-column: 1/4;
+    grid-row: 4;
+    height: 50px;
+    height: auto;
+
+}
+
+.introduccion--figure {
+    grid-column: 4;
+    grid-row: 1;
+
+}
+
+
+.skillsHabilidades--contenedor {
+    
+    grid-template-columns: auto auto auto auto auto;
+}
+
+
+.estudios{
+    display: flex;
+    flex-direction: row;;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.subtitulos--anchoTotal{
+    width: 100%;
+}
+
+.experiencia{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+    
+
+.contacto--formulario{
+    column-gap: 3%;
+}
+.cabecera--navegacion {
+    display: block;
+    overflow: visible;
+    
+}
+/* Contacto */
+.contacto--nombre{ 
+    grid-column: 1/2;
+
+
+}
+.contacto--email{ 
+    grid-column: 1/2;
+    
+}
+.contacto--asunto{ 
+    grid-column: 2;
+    grid-row: 1;
+}
+.contacto--comentario{ 
+    grid-column: 2;
+    grid-row: 2;
+    
+}
+.contacto--btnEnviar{ 
+    grid-column: 1/3;
+    margin: auto;
+
+    
+}
+
+
+
+}

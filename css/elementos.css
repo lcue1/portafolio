@@ -1,0 +1,201 @@
+body {
+    background-color: #F5F5F5;
+
+}
+
+/* Elementos del header */
+
+.cabecera--titulo {
+    text-align: center;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 19px;
+    color: #464646;
+}
+
+.cabecera--email {
+    text-align: center;
+    text-align: center;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 19px;
+    color: #464646;
+
+}
+
+
+
+.llistMenu--item {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    text-decoration: none;
+}
+
+
+/* Main ->introduccion */
+
+
+.introduccion--articuloTitulo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.introduccion--articuloParrafo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    margin: 3% 0%;
+    text-align: justify;
+
+}
+
+.introduccion--redesLink {
+    color: #464646;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
+
+/* Acerca de mi */
+
+
+
+.subtitulos {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #464646;
+    padding: 2% 0%;
+    margin: 1% 0%;
+}
+
+.subtitulos--centrados {
+    text-align: center;
+
+}
+
+.acercaDe--parrafo {
+    color: #464646;
+    margin: 1% 0%;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: justify;
+
+
+}
+
+/* Estudios */
+
+.estudios--figure {
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.estudios--img {
+    width: 84px;
+    height: 54px;
+    margin: 10% 0%;
+}
+
+.estudios--descripcion {
+    text-align: left;
+    background-color: #EAF2FD;
+}
+
+.estudios---subtiruloCaption {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.estudios---parafoCaption {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+/* Experiencia */
+.experiencia--subtitulo {
+    margin: 3% 0%;
+    color: #0A3871;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 19px;
+}
+
+.experiencia--descripcion {
+    color: #464646;
+    margin: 1% 0%;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: justify;
+}
+
+
+/* Contacto */
+.contacto--nombre{ 
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+}
+.contacto--email{ 
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    
+}
+.contacto--asunto{ 
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    
+}
+.contacto--comentario{ 
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    
+}
+
+.contacto--btnEnviar {
+    width: 133px;
+    height: 40px;
+    background-color: #2A7AE4;
+    color: #ffffff;
+}
