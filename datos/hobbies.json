@@ -1,0 +1,19 @@
+{
+    "imagenesHabilidades":[
+        {"nombre":"Bicicleta",
+        "ruta":"imagenes/hobbies/bici.png"
+        },
+        {"nombre":"Series y películas",
+        "ruta":"imagenes/hobbies/tv.png"
+        },
+        {"nombre":"Guitarra",
+        "ruta":"imagenes/hobbies/guitarra.png"
+        },
+        {"nombre":"Football",
+        "ruta":"imagenes/hobbies/futbol.png"
+        }
+    ]
+    
+}
+
+

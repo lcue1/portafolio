@@ -1,0 +1,22 @@
+{
+    "imagenesHabilidades":[
+        {"nombre":"Java Script",
+        "ruta":"imagenes/habilidades/javaScript.png"
+        },
+        {"nombre":"HTML 5",
+        "ruta":"imagenes/habilidades/html5.png"
+        },
+        {"nombre":"PHP",
+        "ruta":"imagenes/habilidades/php.png"
+        },
+        {"nombre":"CSS",
+        "ruta":"imagenes/habilidades/css.png"
+        },
+        {"nombre":"SQL",
+        "ruta":"imagenes/habilidades/sql.png"
+        }
+    ]
+    
+}
+
+
