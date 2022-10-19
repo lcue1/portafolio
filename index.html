@@ -10,26 +10,27 @@
     <link rel="stylesheet" href="css/imagenes.css">
     <link rel="stylesheet" href="css/elementos.css">
     <link rel="stylesheet" href="css/tabletYPC.css">
+    <link rel="stylesheet" href="css/efectos.css">
     <title>Luis Ubillus</title>
 </head>
 
 <body>
-    <div class="principal">
 
-        <header class="cabecera">
+        <header id="cabecera" class="cabecera">
             <h1 class="cabecera--titulo">Luis Ubillus</h1>
             <nav class="cabecera--navegacion">
                 <ul class="listaMenu">
-                    <li><a class="llistMenu--item" href="#">Sobre mi</a></li>
-                    <li><a class="llistMenu--item" href="#">Skills</a></li>
-                    <li><a class="llistMenu--item" href="#">Hobbies</a></li>
-                    <li><a class="llistMenu--item" href="#">Formación</a></li>
-                    <li><a class="llistMenu--item" href="#">Proyectos</a></li>
+                    <li><a class="llistMenu--item" href="#acercaDe">Sobre mi</a></li>
+                    <li><a class="llistMenu--item" href="#skills">Skills</a></li>
+                    <li><a class="llistMenu--item" href="#hobbies">Hobbies</a></li>
+                    <li><a class="llistMenu--item" href="#formacion">Formación</a></li>
+                    <li><a class="llistMenu--item" href="#proyectos">Proyectos</a></li>
                 </ul>
             </nav>
             <a class="cabecera--email" href="lubilluse@gmail.com">lubilluse@gmail.com</a>
+            <div  id="irAlInicio" class="irAlInicio"><a class="irAlInicioLink" href="#cabecera">&#9650;</a></div>
 
-           
+
         </header>
 
 
@@ -55,7 +56,7 @@
                 </figure>
             </section>
 
-            <section class="acercaDe">
+            <section id="acercaDe" class="acercaDe">
                 <h3 class="subtitulos">Acerca de mí</h3>
                 <p class="acercaDe--parrafo"> Nací en Ecuador (Quito) el 30 de agosto de 1989 , desde mi niñez me
                     ha interesado los avances en tecnología, tan así que cuando ocurrió
@@ -77,77 +78,22 @@
 
 
         <section class="skillsHabilidades">
-            <article class="">
+            <article id="skills" class="">
                 <h3 class="subtitulos subtitulos--centrados">Skills</h3>
-                <ul class="skillsHabilidades--contenedor">
-                    <li class="skillsHabilidades--item"><a href="#">
-                            <figure class="skillsHabilidades--figure">
-                                <img src="imagenes/Vector (3).png" alt="html 5">
-                                <figcaption>Futbol</figcaption>
-                            </figure>
-                        </a></li>
-                        <li class="skillsHabilidades--item"><a href="#">
-                                <figure class="skillsHabilidades--figure">
-                                    <img src="imagenes/Vector (3).png" alt="html 5">
-                                    <figcaption>Futbol</figcaption>
-                                </figure>
-                            </a></li>
-                            <li class="skillsHabilidades--item"><a href="#">
-                                    <figure class="skillsHabilidades--figure">
-                                        <img src="imagenes/Vector (3).png" alt="html 5">
-                                        <figcaption>Futbol</figcaption>
-                                    </figure>
-                                </a></li>
-                                <li class="skillsHabilidades--item"><a href="#">
-                                        <figure class="skillsHabilidades--figure">
-                                            <img src="imagenes/Vector (3).png" alt="html 5">
-                                            <figcaption>Futbol</figcaption>
-                                        </figure>
-                                    </a></li>
-                                    <li class="skillsHabilidades--item"><a href="#">
-                                            <figure class="skillsHabilidades--figure">
-                                                <img src="imagenes/Vector (3).png" alt="html 5">
-                                                <figcaption>Futbol</figcaption>
-                                            </figure>
-                                        </a></li>
-                                        <li class="skillsHabilidades--item"><a href="#">
-                                                <figure class="skillsHabilidades--figure">
-                                                    <img src="imagenes/Vector (3).png" alt="html 5">
-                                                    <figcaption>Futbol</figcaption>
-                                                </figure>
-                                            </a></li>
-                                            <li class="skillsHabilidades--item"><a href="#">
-                                                    <figure class="skillsHabilidades--figure">
-                                                        <img src="imagenes/Vector (3).png" alt="html 5">
-                                                        <figcaption>Futbol</figcaption>
-                                                    </figure>
-                                                </a></li>
+                <ul id="contenedorHabilidades" class="skillsHabilidades--contenedor">
+                  
                 </ul>
             </article>
 
-            <article class="">
+            <article id="hobbies" class="">
                 <h3 class="subtitulos subtitulos--centrados">Hobbies</h3>
-                <ul class="skillsHabilidades--contenedor">
-
-                    <li class="skillsHabilidades--item"><a href="#">
-                            <figure class="skillsHabilidades--figure">
-                                <img src="imagenes/Vector (3).png" alt="html 5">
-                                <figcaption>Futbol</figcaption>
-                            </figure>
-                        </a></li>
-                    <li class="skillsHabilidades--item"><a href="#">
-                            <figure class="skillsHabilidades--figure">
-                                <img src="imagenes/Vector (3).png" alt="html 5">
-                                <figcaption>Futbol</figcaption>
-                            </figure>
-                        </a></li>
-                        
+                <ul id="contenedorHobbies" class="skillsHabilidades--contenedor">
 
                 </ul>
             </article>
         </section>
 
-        <section class="estudios">
+        <section  id="formacion" class="estudios">
             <h3 class="subtitulos subtitulos--centrados subtitulos--anchoTotal">Educación</h3>
             <figure class="estudios--figure">
                 <img class="estudios--img" src="imagenes/certificados-educacion/alura.png" alt="Curso Alura">
@@ -157,16 +103,16 @@
                 </figcaption>
             </figure>
             <figure class="estudios--figure">
-                <img class="estudios--img" src="imagenes/certificados-educacion/alura.png" alt="Curso Alura">
+                <img class="estudios--img" src="imagenes/certificados-educacion/secap.jpg" alt="Curso Alura">
                 <figcaption class="estudios--descripcion">
-                    <h4 class="estudios---subtiruloCaption">Programación Básica</h4>
-                    <p class="estudios---parafoCaption">2022 - Alura</p>
+                    <h4 class="estudios---subtiruloCaption">Reparación y mantenimiento PC</h4>
+                    <p class="estudios---parafoCaption">2015 - Secap</p>
                 </figcaption>
             </figure>
 
         </section>
 
-        <section class="experiencia">
+        <section id="proyectos" class="experiencia">
             <h3 class="subtitulos subtitulos--centrados subtitulos--anchoTotal">Experiencia profesional</h3>
             <!-- 
             <iframe class="experiencia--encriptador" src="https://lcue1.github.io/Alura-challenger_1/" frameborder="0"></iframe>
@@ -212,11 +158,11 @@
         <footer class="contacto">
             <h3 class="subtitulos subtitulos--centrados">Contacto</h3>
             <p class="contacto--parrafo">Apenas lea tu mensaje te contestaré</p>
-            <form class="contacto--formulario">
-                <input class="contacto--nombre" name="nombre" type="text" id="nombre" placeholder="Nombre">
-                <input class="contacto--email" name="email" type="email" id="email" placeholder="E-mail">
-                <input class="contacto--asunto" name="asunto" type="text" id="asunto" placeholder="Asunto">
-                <textarea class="contacto--comentario" name="comentario" id="" comentario cols="30"
+            <form id="formContacto" class="contacto--formulario">
+                <input id="contactoNombre" class="contacto--nombre" name="nombre" type="text" id="nombre" placeholder="Nombre" maxlength="30">
+                <input id="contactoEmail" class="contacto--email" name="email" type="text" id="email" placeholder="E-mail">
+                <input id="contactoAsunto" class="contacto--asunto" name="asunto" type="text" id="asunto" placeholder="Asunto">
+                <textarea id="contactoComentario" class="contacto--comentario" name="comentario" id="" comentario cols="30"
                     rows="10"></textarea>
                 <input class="contacto--btnEnviar" type="submit" name="contacto" value="Enviar">
             </form>

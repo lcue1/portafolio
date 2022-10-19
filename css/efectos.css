@@ -1,0 +1,22 @@
+.llistMenu--item:hover{
+   
+  background-color: rgba(65, 65, 65, 0.5);
+  color: white;
+  font-size: 1.4rem;
+}
+
+.irAlInicio__show{
+
+  visibility: visible;
+  opacity: 1;
+}
+
+.mensajeError{
+  position: relative;
+  background-color: #f7b0b0;
+  color: #470c0c;
+  font-size: 2rem;
+}
+
+
+

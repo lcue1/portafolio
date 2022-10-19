@@ -3,9 +3,8 @@
 
         justify-content: space-between;
         padding: 5%;
-        
-
     }
+
 
 
 .introduccion--articuloTitulo {
@@ -32,7 +31,7 @@
 
 .introduccion--figure {
     grid-column: 4;
-    grid-row: 1;
+    grid-row: 1/3;
 
 }
 
@@ -64,8 +63,10 @@
 
 @media only screen and (min-width: 1200px) {
 
+.skillsHabilidades--contenedor {
     
-
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
 .contacto--formulario{
     column-gap: 3%;
 }

@@ -33,6 +33,7 @@ main {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto auto;
+    column-gap: 2%;
     row-gap: 2%;
     padding: 5%;
 }
@@ -72,7 +73,7 @@ main {
 
 
 .acercaDe {
-    padding: 5%;
+    padding: 0% 5%;
     background-color: #EAF2FD;
 
 }
@@ -84,7 +85,7 @@ main {
 
 .skillsHabilidades--contenedor {
     display: grid;
-    padding: 5%;
+    padding: 0% 5%;
     grid-template-columns: auto auto;
     justify-content: center;
     column-gap: 2%;
@@ -116,7 +117,7 @@ main {
 .estudios{
     display: flex;
     flex-direction: column;
-    padding: 5%;
+    padding: 0% 5%;
     background-color: #EAF2FD;
 }
 .experiencia{
@@ -153,22 +154,23 @@ main {
 .contacto--nombre{ 
     grid-column: 1/3;
     grid-row: 1;
-    height: 56px;
+    height: 40px;
 }
 .contacto--email{ 
     grid-column: 1/3;
     grid-row: 2;
-    height: 50px;
+    height: 40px;
 }
 .contacto--asunto{ 
     grid-column: 1/3;
     grid-row: 3;
-    height: 50px;
+    height: 40px;
 }
 .contacto--comentario{ 
     grid-column: 1/3;
     grid-row: 4;
     height: 200px;
+    resize: none;
     
 }
 .contacto--btnEnviar{ 
