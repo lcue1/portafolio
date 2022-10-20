@@ -11,7 +11,7 @@ export const cargarSkillsHabilidades =  async () => {
 
 
     const imagenesHabilidades=await cargarJSON(
-        "https://github.com/lcue1/portafolio/blob/master/datos/habilidades.json",
+        "./datos/habilidades.json",
         { headers: { 'Accept': 'application/json' } },
         
     )
@@ -20,11 +20,11 @@ export const cargarSkillsHabilidades =  async () => {
 
 
     const imagenesHabbies=await cargarJSON(
-        "https://github.com/lcue1/portafolio/blob/master/datos/hobbies.json",
+        "./datos/hobbies.json",
         { headers: { 'Accept': 'application/json' } },
         
     )
-    insertarDatos(imagenesHabbies.imagenesHabilidades,d.getElementById("contenedorHobbies"))
+    insertarDatos(imagenesHabbies.imagenesHobbies,d.getElementById("contenedorHobbies"))
 
 
     // cargarJSON(
