@@ -11,7 +11,7 @@ export const cargarSkillsHabilidades =  async () => {
 
 
     const imagenesHabilidades=await cargarJSON(
-        "/datos/habilidades.json",
+        "./datos/habilidades.json",
         { headers: { 'Accept': 'application/json' } },
         
     )
