@@ -20,7 +20,7 @@ export const cargarSkillsHabilidades =  async () => {
 
 
     const imagenesHabbies=await cargarJSON(
-        "https://github.com/lcue1/portafolio/blob/master/datos/habilidades.json",
+        "https://github.com/lcue1/portafolio/blob/master/datos/hobbies.json",
         { headers: { 'Accept': 'application/json' } },
         
     )
