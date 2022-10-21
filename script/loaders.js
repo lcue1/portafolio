@@ -13,6 +13,7 @@ export const loader= (onOff,dondeColacarOEliminar)=>{
         
         dondeColacarOEliminar.appendChild($loader)
     } else {;
-        dondeColacarOEliminar.removeChild(document.getElementById("loader"))
+        
+       dondeColacarOEliminar.removeChild(dondeColacarOEliminar.firstElementChild)
     }
 }
