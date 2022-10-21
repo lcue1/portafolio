@@ -1,10 +1,11 @@
 'use strict'
 import { mostrarElementos } from "./addmos.js"
-import { cargarSkillsHabilidades } from "./cargarDatos.js"
+import {  cargarSkills } from "./cargarDatos.js"
 import { validarInputEmail, validarInputText } from "./validaciones.js"
 const d=document
 window.onload=()=>{
-    cargarSkillsHabilidades()
+    cargarSkills("./datos/habilidades.json",d.getElementById("contenedorHabilidades"))
+    cargarSkills("./datos/hobbies.json",d.getElementById("contenedorHobbies"))
 
 
     mostrarElementos()

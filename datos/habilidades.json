@@ -1,5 +1,5 @@
 {
-    "imagenesHabilidades":[
+    "imagenes":[
         {"nombre":"Java Script",
         "ruta":"imagenes/habilidades/javaScript.png"
         },

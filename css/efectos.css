@@ -11,6 +11,8 @@
   opacity: 1;
 }
 
+
+/* Mensajes */
 .mensajeError{
   position: relative;
   background-color: #f7b0b0;
@@ -20,3 +22,40 @@
 
 
 
+
+.errorAlCargar{
+  color: #470c0c;
+  position: relative;
+
+}
+
+
+.errorAlCargar--titulo{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.errorAlCargar--texto{
+  font-size: 1.2rem;
+  margin-top: 1%;
+}
+
+
+
+
+/* Loaders */
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

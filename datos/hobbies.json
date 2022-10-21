@@ -1,5 +1,5 @@
 {
-    "imagenesHobbies":[
+    "imagenes":[
         {"nombre":"Bicicleta",
         "ruta":"imagenes/hobbies/bici.png"
         },

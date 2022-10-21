@@ -1,4 +1,5 @@
 import { crearEttiquetas } from "./generadorEtiquetasHTML.js"
+import { loader } from "./loaders.js"
 import { cargarJSON } from "./request.js"
 
 
@@ -7,41 +8,38 @@ const d = document
 
 
 
-export const cargarSkillsHabilidades =  async () => {
+export const cargarSkills = async (rutaDatos,dodeAgregar ) => {
 
+    loader(true,dodeAgregar)
 
-    const imagenesHabilidades=await cargarJSON(
-        "./datos/habilidades.json",
+    let datos = await cargarJSON(
+        rutaDatos,
         { headers: { 'Accept': 'application/json' } },
-        
+
     )
-    insertarDatos(imagenesHabilidades.imagenesHabilidades,d.getElementById("contenedorHabilidades"))
+
+    if (!datos.ok) {
+        errorToLoad(datos,dodeAgregar)
+
+    } else {
+
+        datos=await datos.json()
+        succes(datos.imagenes, dodeAgregar)
+    }
+    loader(false,dodeAgregar)
 
 
 
-    const imagenesHabbies=await cargarJSON(
-        "./datos/hobbies.json",
-        { headers: { 'Accept': 'application/json' } },
-        
-    )
-    insertarDatos(imagenesHabbies.imagenesHobbies,d.getElementById("contenedorHobbies"))
-
-
-    // cargarJSON(
-    //     "/datos/hobbies.json",
-    //     { headers: { 'Accept': 'application/json' } },
-    //     d.getElementById("contenedorHobbies")
-    // )
-
-
+    
 }
 
 
 
 
 
-const insertarDatos = (datos, dondeInsertar) => {
-    
+
+const succes = (datos, dondeInsertar) => {
+
     const fragmento = d.createDocumentFragment()
 
     datos.forEach((e, i) => {
@@ -76,3 +74,30 @@ const insertarDatos = (datos, dondeInsertar) => {
     dondeInsertar.appendChild(fragmento)
 
 }
+
+
+const errorToLoad=(mensaje,dondeInsertar)=>{
+    console.log(mensaje);
+    const $contenedor=crearEttiquetas({
+        TipoEtiqueta:"li",
+        clase:"errorAlCargar",
+    })
+    const $titulo=crearEttiquetas({
+        TipoEtiqueta:"h1",
+        clase:"errorAlCargar--titulo",
+        texto:"No se puede cargar la información"
+    })
+    
+    const $texto=crearEttiquetas({
+        TipoEtiqueta:"p",
+        clase:"errorAlCargar--texto",
+        texto:mensaje.statusText
+    })
+    $contenedor.appendChild($titulo)
+    $contenedor.appendChild($texto)
+    
+    dondeInsertar.appendChild($contenedor)
+
+}
+
+

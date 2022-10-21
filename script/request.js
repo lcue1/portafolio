@@ -1,23 +1,25 @@
 
-export const cargarJSON = async (ruta, headers) => {
+export const cargarJSON = async (ruta, headers,) => {
     try {
-        const request = await fetch(
+
+        const request = await  fetch(
             ruta,
             {
                 headers
             }
         )
-
+        
+        
         if (!request.ok) throw {
-            status: request.status,
-            statusText: request.statusText && "Not found"
+            status: request.status || 404,
+            statusText: request.statusText || "Not found",
+            ok:false
         }
-        console.log(request);
-        return await request.json()
+        return await request
        // insertarDatos(res, dondeInsertar)
 
     } catch (err) {
-        console.log(err);
+        return await err
     }
 
 }
